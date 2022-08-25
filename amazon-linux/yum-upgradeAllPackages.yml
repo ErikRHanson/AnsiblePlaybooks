@@ -1,4 +1,7 @@
-- name: Upgrade all packages
-  ansible.builtin.yum:
-    name: '*'
-    state: latest
+- hosts: localhost
+  tasks:
+    - name: upgrade all packages
+      yum: name=* state=latest- hosts: localhost
+  tasks:
+    - name: upgrade all packages
+      yum: name=* state=latest
